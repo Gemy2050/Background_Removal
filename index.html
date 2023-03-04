@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remove Img Background</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="parent">
+    <h1>Remove Image Background</h1>  
+    <div class="container">
+      <div class="upload-tab">
+        <label for="file">Upload</label>
+        <input type="file" id="file">
+        <p>Choose an image to remove background</p>
+      </div>
+      <div class="ready-tab">
+        <div class="image"><img src="image.jpeg" class="img-before" alt=""></div>
+        <button class="start">Start</button>
+      </div>
+      <div class="loading-tab">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="download-tab">
+        <div class="image"><img src="image.jpeg" class="img-after"></div>
+        <div class="buttons">
+          <button class="upload">Upload Another</button>
+          <a class="download" download="transparent_Image">Download</a>
+        </div>
+      </div>
+  </div>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

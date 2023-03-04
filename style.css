@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #222;
+  color: #FFF;
+  font-family: system-ui;
+}
+h1 {
+  width: fit-content;
+  margin: 30px auto;
+  font-size: 25px;
+}
+.parent {
+  padding: 0 10px;
+}
+.container {
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+  border: 2px solid #EEE;
+  border-radius: 6px;
+  padding: 20px 10px;
+  min-height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container > div {
+  width: 100%;
+  padding: 0 10px;
+  text-align: center;
+  display: none;
+}
+.container img {
+  width: 100%;
+  max-height: 400px;
+  border-radius: 4px;
+}
+.container button,
+.container a.download{
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  background-color: #0075ff;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 17px;
+}
+.container button a {
+  text-decoration: none;
+  color: #FFF;
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 10px;
+}
+.container .upload-tab label {
+  background-color: #0075ff;
+  padding: 10px;
+  border-radius: 6px;
+  display: block;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.container .upload-tab input[type="file"] {
+  display: none;
+}
+.container .loading-tab span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FFF;
+  margin-right: 5px;
+  animation-name: move;
+  animation-duration: .9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.container .loading-tab span:nth-child(2) {
+  animation-delay: .3s;
+}
+.container .loading-tab span:nth-child(3) {
+  animation-delay: .6s;
+}
+.container .download-tab .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+@keyframes move {
+  to {
+    opacity: 0.2;
+    transform: translateY(-20px);
+}
+}
